@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Doctor from './pages/Doctor';
 import AddDoctor from './pages/AddDoctor';
+import EditDoctor from './pages/EditDoctor';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Route exact path="/" component={Home}/>
     <Route exact path="/doctor/" component={Doctor}/>
     <Route exact path="/doctor/add-doctor/" component={AddDoctor} />
+    <Route exact path="/doctor/edit-doctor/" component={EditDoctor} />
     </Switch>
     </>
   );

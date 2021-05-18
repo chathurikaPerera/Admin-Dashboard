@@ -19,7 +19,7 @@ export default function Sidebar({sidebarOpen, closeSidebar}) {
             <div className="sidebar-menu">
                <div className="sidebar-link active-menu-link">
                   <FaHome className="sidebar-icon" />
-                  <Link to="/">Dashboard</Link> 
+                  <Link to="/doctor">Admin Dashboard</Link> 
                </div>
                <h2>Doctors Management</h2>
                <div className="sidebar-link">
@@ -28,13 +28,13 @@ export default function Sidebar({sidebarOpen, closeSidebar}) {
                </div>
                <div className="sidebar-link">
                   <FaEdit className="sidebar-icon" />
-                  <Link to="/">Edit/Delete Doctor</Link> 
+                  <Link to="/doctor/edit-doctor">Edit/Delete Doctor</Link> 
                </div>
                <div className="sidebar-link">
                   <FaBookMedical className="sidebar-icon" />
                   <Link to="/">View Doctors</Link> 
                </div>
-               <h2>Receptionalist Management</h2>
+               <h2>Appointments Management</h2>
                <div className="sidebar-link">
                   <FaUserAlt className="sidebar-icon" />
                   <Link to="/">Add Receptionalist</Link> 

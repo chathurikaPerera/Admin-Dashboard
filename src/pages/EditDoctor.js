@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from '../components/doctor/Navbar';
 import Sidebar from '../components/doctor/Sidebar';
-import Main from '../components/doctor/Main';
+import Edit from '../components/doctor/Edit';
 
-export default class Doctor extends Component {
+export default class EditDoctor extends Component {
     state={
         isOpen:false
     };
@@ -19,9 +19,10 @@ export default class Doctor extends Component {
             <div className="container">
                 <Navbar sidebarOpen={this.state.isOpen} openSidebar={this.openSidebar}/>
                 <Sidebar sidebarOpen={this.state.isOpen} closeSidebar={this.closeSidebar}/>
-                <Main />
+                <Edit />
 
             </div>
         )
     }
 }
+

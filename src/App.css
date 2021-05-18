@@ -8,7 +8,7 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
-  background: #3ea175;
+  background: rgb(2, 36, 110);
   border-radius: 10px;
 }::-webkit-scrollbar-thumb:hover{
   background: #a5aaad;
@@ -287,7 +287,7 @@ main{
   overflow-y: auto;
 }
 .main-container{
-  padding: 20px 35px;
+  padding: 20px 20px;
 }
 .main-card{
   display: grid;
@@ -306,6 +306,7 @@ main{
 }
 .main-icon{
   color: black;
+  font-size: 25px;
 }
 .card-inner{
   display: flex;
@@ -314,6 +315,7 @@ main{
 }
 .card-inner > span {
   font-size: 25px;
+  color: rgb(236, 91, 91);
 }
 .card-inner > p {
   font-weight: 700;
@@ -322,7 +324,7 @@ main{
 /* register */
 .register-card{
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 30px;
   margin: 20px 0;
   justify-content: center;
@@ -330,34 +332,112 @@ main{
 }
 .form-container{
   background: #a5aaad;
-  padding: 15px;
+  padding: 10px;
   align-items: center;
   border-radius: 5px;
 }
+.form-container > h2{
+  text-align: center;
+}
 .form-input{
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   float: left;
-
-
 }
 .form-label{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin: 5px;
-  background: #3ea175;
+  width: 200px;
   
 }
 .form{
-
   padding: 20px;
+  text-align: center;
 }
 .input{
-  margin-left: 20px;
+  margin: 5px 5px 5px 20px;
   width: 350px;
   height: 20px;
-  flex-grow: 8;
+  font-size: 14px;
+ 
+}
+.form-input-button{
+  text-align: center;
+  color: rgb(2, 36, 110);
+}
+.doctor-container{
+  background:#3ea175;
+  padding: 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+.doctor-container > h2{
+  text-align: center;
+  color: rgb(155, 3, 3);
+}
+
+
+/* doctor list */
+.list-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.list-item{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(2, 36, 110);
+}
+/* edit doctor */
+.edit-card{
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 30px;
+  margin: 20px 0px;
+  justify-content: center;
+}
+.edit-container{
+  background: #3ea175;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+.edit-container >h2 {
+  text-align: center;
+}
+.form-edit{
+  padding: 20px;
+  text-align: center;
+}
+.form-label-edit{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px;
+  width: 150px;
+  
+}
+.input-edit{
+  margin: 5px 5px 5px 20px;
+  height: 20px;
+  font-size: 14px;
+  width: 300px;
+}
+.form-edit-label{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px;
+  width: 100px;
+  
+}
+.edit-input{
+  margin: 5px 5px 5px 20px;
+  height: 20px;
+  font-size: 14px;
+  width: 250px;
 }

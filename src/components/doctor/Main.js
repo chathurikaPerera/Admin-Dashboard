@@ -1,26 +1,26 @@
 import React from 'react';
-import {FaAlignRight, FaSearch} from 'react-icons/fa';
+import {FaBookMedical, FaUserMd, FaUserEdit} from 'react-icons/fa';
 
 export default function Main() {
     return (
         <main className="main-container">
           <div className="main-card">
                 <div className="card">
-                    <FaSearch class="main-icon"/>
+                    <FaUserMd class="main-icon"/>
                     <div className="card-inner">
                         <p className="card-text">Number of Doctors</p>
                         <span className="card-numer">60</span>
                     </div>
                 </div>
                 <div className="card">
-                    <FaSearch />
+                    <FaUserEdit class="main-icon"/>
                     <div className="card-inner">
                         <p className="card-text">Number of Receptionalists</p>
                         <span className="card-numer">60</span>
                     </div>
                 </div>
                 <div className="card">
-                    <FaSearch />
+                    <FaBookMedical class="main-icon"/>
                     <div className="card-inner">
                         <p className="card-text">Number of appointments</p>
                         <span className="card-numer">60</span>
