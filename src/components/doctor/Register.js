@@ -5,7 +5,7 @@ import Doctorlist from '../Doctorlist';
 class Register extends Component {
     constructor(props){
         super(props);
-        this.state = {name:'', hospital:'', specialist:'', docId:'', age:'', gender:'', address:'', mobile:'', email:'', list:[]};
+        this.state = {name:'', hospital:'', specialist:'', nic:'', docId:'', age:'', gender:'', address:'', mobile:'', email:'', list:[]};
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -37,7 +37,8 @@ class Register extends Component {
         event.preventDefault();
         alert(this.state.name);
         const ad = firebase.firestore();
-        const user = ad.collection("doctors").add({
+        console.log(this.state.nic);
+        const user = ad.collection("doctors").doc(this.state.nic).set({
             address: this.state.address,
             age: this.state.age,
             doctorID: this.state.docId,
@@ -74,6 +75,11 @@ class Register extends Component {
                             <div className="form-input">
                                 <div className="form-label"><label>Doctor ID</label></div>
                                 <div><input type="text" name="docId" onChange={this.handleChange} className="input"/></div>
+                                
+                            </div>
+                            <div className="form-input">
+                                <div className="form-label"><label>NIC</label></div>
+                                <div><input type="text" name="nic" onChange={this.handleChange} className="input"/></div>
                                 
                             </div>
                             <div className="form-input">

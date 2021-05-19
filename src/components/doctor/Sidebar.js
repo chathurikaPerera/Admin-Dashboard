@@ -37,7 +37,7 @@ export default function Sidebar({sidebarOpen, closeSidebar}) {
                <h2>Appointments Management</h2>
                <div className="sidebar-link">
                   <FaUserAlt className="sidebar-icon" />
-                  <Link to="/">Add Receptionalist</Link> 
+                  <Link to="/doctor/appointments">New Appointments</Link> 
                </div>
                <div className="sidebar-link">
                   <FaEdit className="sidebar-icon" />
