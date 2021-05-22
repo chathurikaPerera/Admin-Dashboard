@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaBookMedical, FaUserMd, FaUserEdit} from 'react-icons/fa';
+import LineChart from './LineChart';
 
 export default function Main() {
     return (
@@ -27,7 +28,19 @@ export default function Main() {
                     </div>
                 </div>
           
-          </div>
+        </div>
+        <div className="main-card2">
+             <div className="card2">
+                <LineChart /> 
+            </div>
+                <div className="card2">
+                    <FaUserEdit class="main-icon"/>
+                    <div className="card-inner">
+                        <p className="card-text">Number of Receptionalists</p>
+                        <span className="card-numer">60</span>
+                    </div>
+                </div>
+        </div>
             
         </main>
     )

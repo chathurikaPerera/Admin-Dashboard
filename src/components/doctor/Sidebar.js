@@ -30,10 +30,7 @@ export default function Sidebar({sidebarOpen, closeSidebar}) {
                   <FaEdit className="sidebar-icon" />
                   <Link to="/doctor/edit-doctor">Edit/Delete Doctor</Link> 
                </div>
-               <div className="sidebar-link">
-                  <FaBookMedical className="sidebar-icon" />
-                  <Link to="/">View Doctors</Link> 
-               </div>
+               
                <h2>Appointments Management</h2>
                <div className="sidebar-link">
                   <FaUserAlt className="sidebar-icon" />
