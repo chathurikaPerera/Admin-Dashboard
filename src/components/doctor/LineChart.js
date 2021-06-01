@@ -5,7 +5,7 @@ const data = {
   labels: ['1', '2', '3', '4', '5', '6'],
   datasets: [
     {
-      label: '# of Votes',
+      label: 'Appontments',
       data: [12, 19, 3, 5, 2, 3],
       fill: false,
       backgroundColor: 'rgb(255, 99, 132)',
@@ -29,15 +29,7 @@ const options = {
 const LineChart = () => (
   <>
     <div className=''>
-      <h1 className=''>Line Chart</h1>
-      <div className=''>
-        <a
-          className=''
-          href='https://github.com/reactchartjs/react-chartjs-2/blob/master/example/src/charts/Line.js'
-        >
-          Github Source
-        </a>
-      </div>
+      <h2 className='chart-name'>Monthly Report</h2>
     </div>
     <Line data={data} options={options} />
   </>

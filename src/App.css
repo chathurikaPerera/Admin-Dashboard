@@ -126,7 +126,7 @@
 
 .container{
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: 0.8fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas: 
@@ -144,14 +144,14 @@
 }
 
 .dash-navbar{
-  background: #3ea175;
+  background: #657EBE;
   grid-area: nav;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 30px 0 30px;
-  border-bottom: 1px solid grey;
+
 
 }
 .dash-nav-button{
@@ -198,7 +198,7 @@
   grid-area: sidebar;
   overflow-y:auto;
   height: 100%;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 0 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -239,7 +239,7 @@
   margin-bottom: 5px;
 }
 .active-menu-link{
-  background:#3ea175;
+  background: #657EBE;
   color: black;
   filter: opacity(60%);
 }
@@ -282,7 +282,7 @@
 }
 /* main */
 main{
-  background: #f3f4f6;
+  background: white;
   grid-area: main;
   overflow-y: auto;
 }
@@ -297,7 +297,7 @@ main{
 }
 .main-card2{
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 30px;
   margin: 20px 0;
 }
@@ -308,19 +308,26 @@ main{
   height: 90px;
   padding: 25px;
   border-radius: 5px;
-  background: #a5aaad;
+  background: white; /*#a5aaad;*/
+  box-shadow: 5px 5px 8px #888888;
+  
+}
+.card-text{
+  color: rgb(9, 136, 125);
 }
 .card2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 400px;
+  height: auto;
   padding: 25px;
   border-radius: 5px;
   background: white;
+  box-shadow: 5px 5px 8px #888888;
+}
+.graph{
+  width: 90%;
+  overflow: hidden;
 }
 .main-icon{
-  color: black;
+  color: rgb(6, 132, 190);
   font-size: 25px;
 }
 .card-inner{
@@ -346,10 +353,11 @@ main{
   
 }
 .form-container{
-  background: #a5aaad;
+  background: white;
   padding: 10px;
   align-items: center;
   border-radius: 5px;
+  box-shadow: 5px 5px 8px #888888;
 }
 .form-container > h2{
   text-align: center;
@@ -385,7 +393,7 @@ main{
   color: rgb(2, 36, 110);
 }
 .doctor-container{
-  background:#3ea175;
+  background: #a5aaad;
   padding: 10px;
   align-items: center;
   border-radius: 5px;
@@ -418,7 +426,7 @@ main{
   justify-content: center;
 }
 .edit-container{
-  background: #3ea175;
+  background: #a5aaad;
   padding: 5px;
   align-items: center;
   border-radius: 5px;
@@ -455,4 +463,7 @@ main{
   height: 20px;
   font-size: 14px;
   width: 250px;
+}
+.chart-name{
+  color: #920d0d;
 }
